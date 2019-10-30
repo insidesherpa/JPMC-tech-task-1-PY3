@@ -32,7 +32,7 @@
 
 <h2 id="installation" >Installation</h2>
 
-Please ensure you are using <b> python2.7. </b>
+Please ensure you are using <b> python3. </b>
 
 Start the data feed server by running:
 
@@ -41,7 +41,7 @@ Start the data feed server by running:
 <h2>Run</h2>
 To start the server, run
 
-	python server.py
+	python server3.py
 
 this will create random market called 'test.csv' in your working directory if one does not already exist.
 
@@ -53,7 +53,7 @@ If you don't have pip, you can install it from: https://pip.pypa.io/en/stable/in
 
 To start the example client, run:
 
-	python client.py
+	python client3.py
 
 To unit test the example client, run:
 	python client_test.py
