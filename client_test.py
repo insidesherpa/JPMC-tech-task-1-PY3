@@ -19,7 +19,6 @@ class ClientTest(unittest.TestCase):
 
   """ ------------ Add more unit tests ------------ """
 
-
-
 if __name__ == '__main__':
     unittest.main()
+# I tried to do bouns in here but it didn't go well.
