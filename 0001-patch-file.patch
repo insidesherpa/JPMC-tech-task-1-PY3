@@ -1,0 +1,82 @@
+From 3dc83851ad63cdcfdde8d98d1c997f42bad4b014 Mon Sep 17 00:00:00 2001
+From: Sarthak Kathuria <sarthakkathuria2001@gmail.com>
+Date: Sun, 26 Apr 2020 18:36:51 +0530
+Subject: [PATCH] patch file
+
+---
+ client3.py     |  1 +
+ client_test.py | 30 ++++++++++++++++++++++++++++--
+ 2 files changed, 29 insertions(+), 2 deletions(-)
+
+diff --git a/client3.py b/client3.py
+index f88f715..b628cd1 100644
+--- a/client3.py
++++ b/client3.py
+@@ -23,6 +23,7 @@ import time
+ import json
+ import random
+ 
++
+ # Server API URLs
+ QUERY = "http://localhost:8080/query?id={}"
+ 
+diff --git a/client_test.py b/client_test.py
+index af2bf26..683d180 100644
+--- a/client_test.py
++++ b/client_test.py
+@@ -1,5 +1,5 @@
+ import unittest
+-from client3 import getDataPoint
++from client3 import getDataPoint, getRatio
+ 
+ class ClientTest(unittest.TestCase):
+   def test_getDataPoint_calculatePrice(self):
+@@ -8,6 +8,8 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], (quote['top_bid']['price'] + quote['top_ask']['price'])/2))
+ 
+   def test_getDataPoint_calculatePriceBidGreaterThanAsk(self):
+     quotes = [
+@@ -15,11 +17,35 @@ class ClientTest(unittest.TestCase):
+       {'top_ask': {'price': 121.68, 'size': 4}, 'timestamp': '2019-02-11 22:06:30.572453', 'top_bid': {'price': 117.87, 'size': 81}, 'id': '0.109974697771', 'stock': 'DEF'}
+     ]
+     """ ------------ Add the assertion below ------------ """
+-
++    for quote in quotes:
++      self.assertEqual(getDataPoint(quote), (quote['stock'], quote['top_bid']['price'], quote['top_ask']['price'], (quote['top_bid']['price'] + quote['top_ask']['price'])/2))
+ 
+   """ ------------ Add more unit tests ------------ """
+ 
++  def test_getRatio_priceBZero(self):
++    price_a = 119.2
++    price_b = 0
++    self.assertIsNone(getRatio(price_a, price_b))
++ 
++  def test_getRatio_priceAZero(self):
++    price_a = 0
++    price_b = 121.68
++    self.assertEqual(getRatio(price_a, price_b), 0)
++ 
++  def test_getRatio_greaterThan1(self):
++    price_a = 346.48
++    price_b = 166.39
++    self.assertGreater(getRatio(price_a, price_b), 1)
++
++  def test_getRatio_LessThan1(self):
++    price_a = 166.39
++    price_b = 356.48
++    self.assertLess(getRatio(price_a, price_b), 1)
+ 
++  def test_getRatio_exactlyOne(self):
++    price_a = 356.48
++    price_b = 356.48
++    self.assertEqual(getRatio(price_a, price_b), 1)
+ 
+ if __name__ == '__main__':
+     unittest.main()
+-- 
+2.16.2.windows.1
+
