@@ -41,53 +41,84 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.client3">
-    <configuration name="client3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePrice">
+    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePrice" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="JPMC-tech-task-1-py3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/client3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculatePrice&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="server3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceAskGreaterThanBid" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="JPMC-tech-task-1-py3" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/server3.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculatePriceAskGreaterThanBid&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="JPMC-tech-task-1-py3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculateRatioAskPriceZero" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="JPMC-tech-task-1-py3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculateRatioAskPriceZero&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for client_test.ClientTest.test_getDataPoint_calculateRatioWhereBidPriceZero" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="JPMC-tech-task-1-py3" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;client_test.ClientTest.test_getDataPoint_calculateRatioWhereBidPriceZero&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.client3" />
-        <item itemvalue="Python.server3" />
+        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePrice" />
+        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceBidGreaterThanAsk" />
+        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculatePriceAskGreaterThanBid" />
+        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculateRatioAskPriceZero" />
+        <item itemvalue="Python tests.Unittests for client_test.ClientTest.test_getDataPoint_calculateRatioWhereBidPriceZero" />
       </list>
     </recent_temporary>
   </component>
@@ -114,22 +145,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1685" height="242" key="GridCell.Tab.0.bottom" timestamp="1597364169189">
+    <state width="1685" height="242" key="GridCell.Tab.0.bottom" timestamp="1597370223558">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1685" height="242" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1597364169189" />
-    <state width="1685" height="242" key="GridCell.Tab.0.center" timestamp="1597364169189">
+    <state width="1685" height="242" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1597370223558" />
+    <state width="1685" height="242" key="GridCell.Tab.0.center" timestamp="1597370223557">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1685" height="242" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1597364169189" />
-    <state width="1685" height="242" key="GridCell.Tab.0.left" timestamp="1597364169188">
+    <state width="1685" height="242" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1597370223557" />
+    <state width="1685" height="242" key="GridCell.Tab.0.left" timestamp="1597370223556">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1685" height="242" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1597364169188" />
-    <state width="1685" height="242" key="GridCell.Tab.0.right" timestamp="1597364169189">
+    <state width="1685" height="242" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1597370223556" />
+    <state width="1685" height="242" key="GridCell.Tab.0.right" timestamp="1597370223557">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
-    <state width="1685" height="242" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1597364169189" />
+    <state width="1685" height="242" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1597370223557" />
     <state x="711" y="109" key="SettingsEditor" timestamp="1597361221526">
       <screen x="0" y="0" width="1707" height="920" />
     </state>
