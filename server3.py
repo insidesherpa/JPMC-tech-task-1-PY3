@@ -281,7 +281,7 @@ class App(object):
             t1, bids1, asks1 = next(self._current_book_1)
             t2, bids2, asks2 = next(self._current_book_2)
         t = t1 if t1 > t2 else t2
-        print ('Query received @ t%s' % t)
+        #print ('Query received @ t%s' % t)
         return [{
             'id': x and x.get('id', None),
             'stock': 'ABC',
